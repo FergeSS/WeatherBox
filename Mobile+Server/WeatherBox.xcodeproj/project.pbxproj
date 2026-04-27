@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33E238362F77E5AC00A3B7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E238352F77E5AC00A3B7D4 /* LaunchScreen.storyboard */; };
+		44A1000B2F77F00100A3B7D4 /* WeatherBoxWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44A100022F77F00100A3B7D4 /* WeatherBoxWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33E238112F77D8A200A3B7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33E237F92F77D8A000A3B7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33E238002F77D8A000A3B7D4;
+			remoteInfo = WeatherBox;
+		};
+		33E2381B2F77D8A200A3B7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33E237F92F77D8A000A3B7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33E238002F77D8A000A3B7D4;
+			remoteInfo = WeatherBox;
+		};
+		44A1000A2F77F00100A3B7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33E237F92F77D8A000A3B7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44A100012F77F00100A3B7D4;
+			remoteInfo = WeatherBoxWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44A100092F77F00100A3B7D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				44A1000B2F77F00100A3B7D4 /* WeatherBoxWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33E238012F77D8A000A3B7D4 /* WeatherBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E238102F77D8A200A3B7D4 /* WeatherBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E2381A2F77D8A200A3B7D4 /* WeatherBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E238352F77E5AC00A3B7D4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44A100022F77F00100A3B7D4 /* WeatherBoxWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeatherBoxWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		33E238372F77F8D200A3B7D4 /* Exceptions for "WeatherBox" folder in "WeatherBox" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 33E238002F77D8A000A3B7D4 /* WeatherBox */;
+		};
+		44A100122F77F00100A3B7D4 /* Exceptions for "WeatherBoxWidget" folder in "WeatherBoxWidget" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 44A100012F77F00100A3B7D4 /* WeatherBoxWidget */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		33E238032F77D8A000A3B7D4 /* WeatherBox */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				33E238372F77F8D200A3B7D4 /* Exceptions for "WeatherBox" folder in "WeatherBox" target */,
+			);
+			path = WeatherBox;
+			sourceTree = "<group>";
+		};
+		33E238132F77D8A200A3B7D4 /* WeatherBoxTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WeatherBoxTests;
+			sourceTree = "<group>";
+		};
+		33E2381D2F77D8A200A3B7D4 /* WeatherBoxUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WeatherBoxUITests;
+			sourceTree = "<group>";
+		};
+		44A100032F77F00100A3B7D4 /* WeatherBoxWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				44A100122F77F00100A3B7D4 /* Exceptions for "WeatherBoxWidget" folder in "WeatherBoxWidget" target */,
+			);
+			path = WeatherBoxWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33E237FE2F77D8A000A3B7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E2380D2F77D8A200A3B7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E238172F77D8A200A3B7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A100062F77F00100A3B7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33E237F82F77D8A000A3B7D4 = {
+			isa = PBXGroup;
+			children = (
+				33E238032F77D8A000A3B7D4 /* WeatherBox */,
+				33E238132F77D8A200A3B7D4 /* WeatherBoxTests */,
+				33E2381D2F77D8A200A3B7D4 /* WeatherBoxUITests */,
+				44A100032F77F00100A3B7D4 /* WeatherBoxWidget */,
+				33E238022F77D8A000A3B7D4 /* Products */,
+				33E238352F77E5AC00A3B7D4 /* LaunchScreen.storyboard */,
+			);
+			sourceTree = "<group>";
+		};
+		33E238022F77D8A000A3B7D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33E238012F77D8A000A3B7D4 /* WeatherBox.app */,
+				33E238102F77D8A200A3B7D4 /* WeatherBoxTests.xctest */,
+				33E2381A2F77D8A200A3B7D4 /* WeatherBoxUITests.xctest */,
+				44A100022F77F00100A3B7D4 /* WeatherBoxWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33E238002F77D8A000A3B7D4 /* WeatherBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33E238242F77D8A200A3B7D4 /* Build configuration list for PBXNativeTarget "WeatherBox" */;
+			buildPhases = (
+				33E237FD2F77D8A000A3B7D4 /* Sources */,
+				33E237FE2F77D8A000A3B7D4 /* Frameworks */,
+				33E237FF2F77D8A000A3B7D4 /* Resources */,
+				44A100092F77F00100A3B7D4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44A1000C2F77F00100A3B7D4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				33E238032F77D8A000A3B7D4 /* WeatherBox */,
+			);
+			name = WeatherBox;
+			packageProductDependencies = (
+			);
+			productName = WeatherBox;
+			productReference = 33E238012F77D8A000A3B7D4 /* WeatherBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33E2380F2F77D8A200A3B7D4 /* WeatherBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33E238272F77D8A200A3B7D4 /* Build configuration list for PBXNativeTarget "WeatherBoxTests" */;
+			buildPhases = (
+				33E2380C2F77D8A200A3B7D4 /* Sources */,
+				33E2380D2F77D8A200A3B7D4 /* Frameworks */,
+				33E2380E2F77D8A200A3B7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33E238122F77D8A200A3B7D4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				33E238132F77D8A200A3B7D4 /* WeatherBoxTests */,
+			);
+			name = WeatherBoxTests;
+			packageProductDependencies = (
+			);
+			productName = WeatherBoxTests;
+			productReference = 33E238102F77D8A200A3B7D4 /* WeatherBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33E238192F77D8A200A3B7D4 /* WeatherBoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33E2382A2F77D8A200A3B7D4 /* Build configuration list for PBXNativeTarget "WeatherBoxUITests" */;
+			buildPhases = (
+				33E238162F77D8A200A3B7D4 /* Sources */,
+				33E238172F77D8A200A3B7D4 /* Frameworks */,
+				33E238182F77D8A200A3B7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33E2381C2F77D8A200A3B7D4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				33E2381D2F77D8A200A3B7D4 /* WeatherBoxUITests */,
+			);
+			name = WeatherBoxUITests;
+			packageProductDependencies = (
+			);
+			productName = WeatherBoxUITests;
+			productReference = 33E2381A2F77D8A200A3B7D4 /* WeatherBoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		44A100012F77F00100A3B7D4 /* WeatherBoxWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A100112F77F00100A3B7D4 /* Build configuration list for PBXNativeTarget "WeatherBoxWidget" */;
+			buildPhases = (
+				44A100052F77F00100A3B7D4 /* Sources */,
+				44A100062F77F00100A3B7D4 /* Frameworks */,
+				44A100072F77F00100A3B7D4 /* Resources */,
+				44A100132F77F00100A3B7D4 /* Strip Forbidden Widget Extension Keys */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				44A100032F77F00100A3B7D4 /* WeatherBoxWidget */,
+			);
+			name = WeatherBoxWidget;
+			packageProductDependencies = (
+			);
+			productName = WeatherBoxWidget;
+			productReference = 44A100022F77F00100A3B7D4 /* WeatherBoxWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33E237F92F77D8A000A3B7D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					33E238002F77D8A000A3B7D4 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					33E2380F2F77D8A200A3B7D4 = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = 33E238002F77D8A000A3B7D4;
+					};
+					33E238192F77D8A200A3B7D4 = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = 33E238002F77D8A000A3B7D4;
+					};
+				};
+			};
+			buildConfigurationList = 33E237FC2F77D8A000A3B7D4 /* Build configuration list for PBXProject "WeatherBox" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33E237F82F77D8A000A3B7D4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 33E238022F77D8A000A3B7D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33E238002F77D8A000A3B7D4 /* WeatherBox */,
+				33E2380F2F77D8A200A3B7D4 /* WeatherBoxTests */,
+				33E238192F77D8A200A3B7D4 /* WeatherBoxUITests */,
+				44A100012F77F00100A3B7D4 /* WeatherBoxWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33E237FF2F77D8A000A3B7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33E238362F77E5AC00A3B7D4 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E2380E2F77D8A200A3B7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E238182F77D8A200A3B7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A100072F77F00100A3B7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44A100132F77F00100A3B7D4 /* Strip Forbidden Widget Extension Keys */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Strip Forbidden Widget Extension Keys";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nPLIST=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nif [ -f \"$PLIST\" ]; then\n  /usr/libexec/PlistBuddy -c \"Delete :NSExtension:NSExtensionPrincipalClass\" \"$PLIST\" || true\n  /usr/libexec/PlistBuddy -c \"Delete :NSExtension:NSExtensionMainStoryboard\" \"$PLIST\" || true\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33E237FD2F77D8A000A3B7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E2380C2F77D8A200A3B7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E238162F77D8A200A3B7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A100052F77F00100A3B7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33E238122F77D8A200A3B7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33E238002F77D8A000A3B7D4 /* WeatherBox */;
+			targetProxy = 33E238112F77D8A200A3B7D4 /* PBXContainerItemProxy */;
+		};
+		33E2381C2F77D8A200A3B7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33E238002F77D8A000A3B7D4 /* WeatherBox */;
+			targetProxy = 33E2381B2F77D8A200A3B7D4 /* PBXContainerItemProxy */;
+		};
+		44A1000C2F77F00100A3B7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44A100012F77F00100A3B7D4 /* WeatherBoxWidget */;
+			targetProxy = 44A1000A2F77F00100A3B7D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33E238222F77D8A200A3B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33E238232F77D8A200A3B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33E238252F77D8A200A3B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WeatherBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.WeatherBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33E238262F77D8A200A3B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WeatherBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.WeatherBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33E238282F77D8A200A3B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.WeatherBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherBox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherBox";
+			};
+			name = Debug;
+		};
+		33E238292F77D8A200A3B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.WeatherBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherBox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherBox";
+			};
+			name = Release;
+		};
+		33E2382B2F77D8A200A3B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.WeatherBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeatherBox;
+			};
+			name = Debug;
+		};
+		33E2382C2F77D8A200A3B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.WeatherBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeatherBox;
+			};
+			name = Release;
+		};
+		44A1000D2F77F00100A3B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WeatherBoxWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.WeatherBox.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44A1000E2F77F00100A3B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V36658JRQ5;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WeatherBoxWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.WeatherBox.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33E237FC2F77D8A000A3B7D4 /* Build configuration list for PBXProject "WeatherBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E238222F77D8A200A3B7D4 /* Debug */,
+				33E238232F77D8A200A3B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33E238242F77D8A200A3B7D4 /* Build configuration list for PBXNativeTarget "WeatherBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E238252F77D8A200A3B7D4 /* Debug */,
+				33E238262F77D8A200A3B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33E238272F77D8A200A3B7D4 /* Build configuration list for PBXNativeTarget "WeatherBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E238282F77D8A200A3B7D4 /* Debug */,
+				33E238292F77D8A200A3B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33E2382A2F77D8A200A3B7D4 /* Build configuration list for PBXNativeTarget "WeatherBoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E2382B2F77D8A200A3B7D4 /* Debug */,
+				33E2382C2F77D8A200A3B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44A100112F77F00100A3B7D4 /* Build configuration list for PBXNativeTarget "WeatherBoxWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44A1000D2F77F00100A3B7D4 /* Debug */,
+				44A1000E2F77F00100A3B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33E237F92F77D8A000A3B7D4 /* Project object */;
+}

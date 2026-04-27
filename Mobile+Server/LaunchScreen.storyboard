@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24161" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="viewController">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24157"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="scene">
+            <objects>
+                <viewController id="viewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="launchView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBoxLogo" translatesAutoresizingMaskIntoConstraints="NO" id="logoView">
+                                <rect key="frame" x="118" y="170" width="156" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="logoWidth"/>
+                                    <constraint firstAttribute="height" constant="156" id="logoHeight"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="WeatherBox" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="titleLabel">
+                                <rect key="frame" x="66" y="350" width="261" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Локальная панель датчиков для ESP8266" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="subtitleLabel">
+                                <rect key="frame" x="52" y="406" width="289" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.3" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBoxLaunchArt" translatesAutoresizingMaskIntoConstraints="NO" id="artView">
+                                <rect key="frame" x="30" y="508" width="333" height="175"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="safeArea"/>
+                        <color key="backgroundColor" red="0.94901960780000003" green="0.98039215689999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="subtitleLabel" firstAttribute="top" secondItem="titleLabel" secondAttribute="bottom" constant="12" id="subtitleTop"/>
+                            <constraint firstItem="logoView" firstAttribute="centerX" secondItem="launchView" secondAttribute="centerX" id="logoCenterX"/>
+                            <constraint firstItem="titleLabel" firstAttribute="top" secondItem="logoView" secondAttribute="bottom" constant="24" id="titleTop"/>
+                            <constraint firstItem="titleLabel" firstAttribute="centerX" secondItem="launchView" secondAttribute="centerX" id="titleCenterX"/>
+                            <constraint firstItem="artView" firstAttribute="top" secondItem="subtitleLabel" secondAttribute="bottom" constant="62" id="artTop"/>
+                            <constraint firstItem="artView" firstAttribute="leading" secondItem="safeArea" secondAttribute="leading" constant="30" id="artLeading"/>
+                            <constraint firstItem="safeArea" firstAttribute="trailing" secondItem="artView" secondAttribute="trailing" constant="30" id="artTrailing"/>
+                            <constraint firstItem="subtitleLabel" firstAttribute="centerX" secondItem="launchView" secondAttribute="centerX" id="subtitleCenterX"/>
+                            <constraint firstItem="subtitleLabel" firstAttribute="leading" secondItem="safeArea" secondAttribute="leading" constant="24" id="subtitleLeading"/>
+                            <constraint firstItem="safeArea" firstAttribute="trailing" secondItem="subtitleLabel" secondAttribute="trailing" constant="24" id="subtitleTrailing"/>
+                            <constraint firstItem="logoView" firstAttribute="top" secondItem="safeArea" secondAttribute="top" constant="111" id="logoTop"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="firstResponder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WeatherBoxLaunchArt" width="1200" height="800"/>
+        <image name="WeatherBoxLogo" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

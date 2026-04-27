@@ -1,0 +1,18 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1024" height="1024" rx="224" fill="url(#paint0_linear_1_5)"/>
+<rect x="32" y="32" width="960" height="960" rx="196" stroke="white" stroke-opacity="0.16" stroke-width="8"/>
+<rect x="270" y="462" width="484" height="318" rx="92" fill="white" fill-opacity="0.14"/>
+<circle cx="396" cy="364" r="132" fill="#F7FBFF"/>
+<rect x="430" y="308" width="278" height="78" rx="39" fill="#F7FBFF"/>
+<rect x="328" y="404" width="410" height="78" rx="39" fill="#F7FBFF"/>
+<circle cx="664" cy="584" r="30" fill="#F7FBFF" fill-opacity="0.92"/>
+<circle cx="664" cy="674" r="30" fill="#F7FBFF" fill-opacity="0.74"/>
+<circle cx="664" cy="764" r="30" fill="#F7FBFF" fill-opacity="0.54"/>
+<defs>
+<linearGradient id="paint0_linear_1_5" x1="126" y1="90" x2="888" y2="916" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0E1E30"/>
+<stop offset="0.58" stop-color="#123A60"/>
+<stop offset="1" stop-color="#2D6EA6"/>
+</linearGradient>
+</defs>
+</svg>
