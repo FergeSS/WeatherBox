@@ -29,6 +29,97 @@ enum ConnectionState {
     case offline
 }
 
+enum ComfortStatus: Equatable {
+    case unavailable
+    case dry
+    case normal
+    case comfortable
+    case humid
+    case stuffy
+
+    init(temperature: Double, humidity: Double) {
+        if humidity < 35 {
+            self = .dry
+        } else if temperature >= 26, humidity >= 60 {
+            self = .stuffy
+        } else if humidity > 60 {
+            self = .humid
+        } else if (20 ... 25).contains(temperature), (40 ... 60).contains(humidity) {
+            self = .comfortable
+        } else {
+            self = .normal
+        }
+    }
+
+    var title: String {
+        switch self {
+        case .unavailable:
+            return "Нет данных"
+        case .dry:
+            return "Сухо"
+        case .normal:
+            return "Нормально"
+        case .comfortable:
+            return "Комфортно"
+        case .humid:
+            return "Влажно"
+        case .stuffy:
+            return "Душно"
+        }
+    }
+
+    var subtitle: String {
+        switch self {
+        case .unavailable:
+            return "Ждём свежие показания"
+        case .dry:
+            return "Влажность ниже комфортной"
+        case .normal:
+            return "Параметры в допустимой зоне"
+        case .comfortable:
+            return "Оптимально для комнаты"
+        case .humid:
+            return "Влажность повышена"
+        case .stuffy:
+            return "Тепло и тяжёлый воздух"
+        }
+    }
+
+    var icon: String {
+        switch self {
+        case .unavailable:
+            return "questionmark.circle"
+        case .dry:
+            return "drop.circle"
+        case .normal:
+            return "gauge.medium"
+        case .comfortable:
+            return "checkmark.circle"
+        case .humid:
+            return "humidity.fill"
+        case .stuffy:
+            return "sun.max.fill"
+        }
+    }
+
+    func accentColor(default defaultColor: Color) -> Color {
+        switch self {
+        case .unavailable:
+            return .secondary
+        case .dry:
+            return .orange
+        case .normal:
+            return defaultColor
+        case .comfortable:
+            return .mint
+        case .humid:
+            return .blue
+        case .stuffy:
+            return .red
+        }
+    }
+}
+
 @MainActor
 @Observable
 final class WeatherBoxViewModel {
@@ -325,6 +416,7 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         MeasurementPill(title: "Влажность", value: sensorHumidity)
                         MeasurementPill(title: "Давление", value: sensorPressure)
+                        MeasurementPill(title: "Комфорт", value: comfortStatus.title)
                     }
                 }
 
@@ -353,11 +445,11 @@ struct ContentView: View {
             )
 
             MetricCard(
-                title: "IP устройства",
-                value: readableValue(viewModel.status?.ip),
-                subtitle: "Последний адрес ESP",
-                icon: "network",
-                accentColor: accentOption.secondaryColor
+                title: "Комфорт",
+                value: comfortStatus.title,
+                subtitle: comfortStatus.subtitle,
+                icon: comfortStatus.icon,
+                accentColor: comfortStatus.accentColor(default: accentOption.secondaryColor)
             )
 
             MetricCard(
@@ -416,6 +508,7 @@ struct ContentView: View {
 
                 DetailRow(title: "Backend", value: WeatherBoxAPI.defaultBaseAddress)
                 DetailRow(title: "Режим", value: viewModel.status?.mode.capitalized ?? "—")
+                DetailRow(title: "IP устройства", value: readableValue(viewModel.status?.ip))
                 DetailRow(title: "Текущая сеть", value: readableValue(viewModel.status?.currentSSID))
                 DetailRow(title: "Последняя связь", value: readableValue(viewModel.status?.lastSeen ?? viewModel.sensor?.lastSeen))
             }
@@ -535,6 +628,14 @@ struct ContentView: View {
 
         let unit = viewModel.sensor?.unitAtmosphericPressure ?? "hPa"
         return "\(pressure.formatted(.number.precision(.fractionLength(1)))) \(unit)"
+    }
+
+    private var comfortStatus: ComfortStatus {
+        guard let sensor = viewModel.sensor else {
+            return .unavailable
+        }
+
+        return ComfortStatus(temperature: sensor.temperature, humidity: sensor.humidity)
     }
 
     private var refreshStamp: String {

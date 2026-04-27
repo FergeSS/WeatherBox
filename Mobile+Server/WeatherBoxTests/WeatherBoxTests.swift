@@ -101,4 +101,17 @@ struct WeatherBoxTests {
         let option = AccentOption(rawValue: "mint")
         #expect(option == .mint)
     }
+
+    @Test func classifiesComfortStatusForTypicalIndoorCases() {
+        #expect(ComfortStatus(temperature: 23.0, humidity: 48.0) == .comfortable)
+        #expect(ComfortStatus(temperature: 18.5, humidity: 47.0) == .normal)
+        #expect(ComfortStatus(temperature: 22.0, humidity: 31.0) == .dry)
+        #expect(ComfortStatus(temperature: 22.0, humidity: 68.0) == .humid)
+        #expect(ComfortStatus(temperature: 27.5, humidity: 64.0) == .stuffy)
+    }
+
+    @Test func prefersDryAndStuffyBoundariesOverGenericStates() {
+        #expect(ComfortStatus(temperature: 27.0, humidity: 34.0) == .dry)
+        #expect(ComfortStatus(temperature: 26.0, humidity: 60.0) == .stuffy)
+    }
 }
